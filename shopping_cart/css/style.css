@@ -1,0 +1,131 @@
+body, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    height: 100vh;  /* viewPort Height 보여지는 단위 다 채움 */
+    background: #eee;
+}
+
+.item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 7px;
+}
+.item img {
+    transition: 0.3s;
+}
+.item:hover img {
+    filter: blur(3px);
+}
+.item:hover .detail {
+    bottom: 0;
+}
+.item .detail {
+    background: #f8f8f8;
+    height: 250px;
+    padding: 10px 20px;
+    box-sizing: border-box; /* padding 을 준 만큼 늘어나는 걸 방지 */
+    position: absolute;
+    left: 0;
+    bottom: -180px; /* overflow: hidden; 오버한 사이즈 부분을 가려준다 */
+    width: 100%;
+    transition: 0.5s;
+}
+
+.item .detail .title {
+    display: flow-root;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.item .detail .title h2 {
+    font-size: 16px;
+    color: #888;
+    line-height: 1.4em; /* em은 부모 요소에 곱한 값 */
+    font-weight: normal;
+}
+.item .detail .title h2 strong {
+    font-size: 20px;
+    color: black;
+}
+.item .detail .title .price {
+    float: right;
+    font-size: 20px;
+    color: crimson;
+}
+
+.item .detail .info {
+    margin-bottom: 12px;
+}
+.item .detail .info .size {
+    margin-bottom: 10px;
+}
+.item .detail .info .size .size_title {
+    margin-bottom: 5px;
+}
+.item .detail .info .size .size_item {
+    display: flow-root;
+}
+.item .detail .info .size .size_item div,
+.item .detail .info .color .color_item div {
+    width: 15px;
+    height: 15px;
+    float: left;
+    font-size: 12px;
+    margin-right: 4px;
+    text-align: center;
+    line-height: 15px;  /* y축 센터 */
+    border-radius: 3px;
+    transition: 0.3s;   /* 변형되기 전 애니메이션 시간 */
+}
+.item .detail .info .size .size_item div:hover {
+    background: black;
+    color: white;
+}
+
+.item .detail .info .color .color_item div.on {
+    border-radius: 50%;
+}
+.item .detail .info .color {
+    margin-bottom: 10px;
+}
+.item .detail .info .color .color_title {
+    margin-bottom: 5px;
+}
+.item .detail .info .color .color_item {
+    display: flow-root;
+}
+.item .detail .info .color .color_item .green {
+    background: #1f3f1f;
+}
+.item .detail .info .color .color_item .red {
+    background: #e62323;
+}
+.item .detail .info .color .color_item .pink {
+    background: #ff4f68;
+}
+.item .detail .info .color .color_item .aqua {
+    background: #36bbbb;
+}
+.item .detail .info .color .color_item .blue {
+    background: #0b0bee;
+}
+
+.item .detail button {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.item .detail button:hover {
+    background: black;
+    color: white;
+}

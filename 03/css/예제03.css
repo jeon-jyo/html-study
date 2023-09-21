@@ -1,0 +1,58 @@
+section {
+    position: relative;
+}
+
+.positionBox {
+    width: 800px;
+    height: 700px;
+    background: #a5da7f;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+
+    top: 100px;
+}
+
+.position1 {
+    width: 200px;
+    height: 200px;
+    background: #ffb310;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 10;
+}
+.position2 {
+    width: 200px;
+    height: 200px;
+    background: #7f7f7f;
+    position: absolute;
+    left: 70px;
+    top: 70px;
+}
+
+.position3 {
+    width: 200px;
+    height: 200px;
+    background: #3a6ef2;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
+.position4 {
+    width: 400px;
+    height: 300px;
+    background: #3d8c53;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.position5 {
+    width: 150px;
+    height: 150px;
+    background: #ff7c07;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

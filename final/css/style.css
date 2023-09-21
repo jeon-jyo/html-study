@@ -1,0 +1,72 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 10px 100px;
+}
+
+.wrap {
+    height: 800px;
+}
+h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+h4 {
+    color: #2a2b2b;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.contents {
+    width: 23.5%;
+    height: 100%;
+    float: left;
+}
+.sub {
+    margin-right: 2%;
+}
+
+.contents > img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.star {
+    color: gold;
+}
+.font1 {
+    font-size: 18px;
+}
+.font2 {
+    color: dodgerblue;
+}
+.font3 {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.font4 {
+    color: blue;
+}
+.font5 {
+    font-weight: bolder;
+    background: lightpink;
+    border: 2px solid lightpink;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.font6 {
+    color: #2a2b2b;
+    margin-top: 10px;
+}
+.sub1 {
+    background: darkseagreen;
+    border: 2px solid darkseagreen;
+}
+.sub2 {
+    color: red;
+}

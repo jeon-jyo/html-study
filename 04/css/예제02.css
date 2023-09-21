@@ -1,0 +1,27 @@
+.wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+header {
+    height: 110px;
+    background: deeppink;
+}
+.visual {
+    height: 450px;
+    background: aquamarine;
+}
+.container {
+    height: 220px;
+    background: orange;
+}
+
+footer {
+    height: 120px;
+    background: #9d9dfc;
+}
+.innerFooter {
+    width: 800px;
+    height: 120px;
+    background: #0b0bee;
+    margin: 0 auto;
+}

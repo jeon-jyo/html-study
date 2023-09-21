@@ -1,0 +1,35 @@
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: black;
+
+    overflow: auto; /* 알아서 계산해서 필요한 스크롤만 생김 */
+    /*overflow-y: scroll;   !* y축 스크롤 *!*/
+    /*overflow: scroll;   !* 모든 스크롤 생김 *!*/
+    /*overflow: hidden; !* 넘쳐나는 것을 방지 *!*/
+}
+.box div {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid green;
+}
+.box div:nth-child(1) {
+    background: red;
+}
+.box div:nth-child(2) {
+    background: orange;
+}
+.box div:nth-child(3) {
+    background: dodgerblue;
+}
+.box div:nth-child(4) {
+    background: green;
+}
+
+.box2 {
+    width: 300px;
+    height: 300px;
+    background: purple;
+}

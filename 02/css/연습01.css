@@ -1,0 +1,34 @@
+/*.main > li > a {*/
+/*    color: red;*/
+/*}*/
+/*.top_menu li {*/
+/*    background-color: orange;*/
+/*}*/
+/*.sub li a {*/
+/*    color: green;*/
+/*}*/
+
+.top_menu {
+    border: 2px solid red;
+}
+.main > li > a {
+    color: red;
+}
+.mid {
+    border: 2px solid orange;
+}
+#sub_top a {
+    color: green;
+}
+.sub .mid a {
+    color: red;
+}
+.sub_menu > li {
+    border: 2px solid blue;
+}
+.sub_menu > li > ul {
+    border: 2px solid green;
+}
+.sub li a {
+    color: green;
+}

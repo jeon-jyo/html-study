@@ -1,0 +1,74 @@
+/*
+    position
+    1. static : 정적인, 기본적인, 기본값
+    2. relative : 상대적인, 상대경로, 기준점
+    3. absolute : 절대적인, 절대경로, 이동수단
+    4. fixed : 고정된, 화면기준 - 모니터 기준
+*/
+
+body {
+    width: 3000px;
+}
+
+article {
+    position: relative; /* 기준점 잡아줌 */
+    width: 1000px;
+    height: 800px;
+    background: green;
+}
+section {
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    position: relative; /* 젤 가까운 포지션 기준 */
+    width: 800px;
+    height: 600px;
+    background: black;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.box1 {
+    /*
+        상대경로 상대적인 기준점 설정
+        윗 레이어로 올라가지만 원래 있던 공간을 유지
+        자기 자신이 기준
+
+         * margin 은 다른 박스들이 밀려난다
+    */
+    /*position: relative;*/
+    /*left: 50%;*/
+    /*top: 50%;   !* 세로라서 안됨 *!*/
+
+    /*
+        절대경로 절대적인 이동용
+        원래 있던 공간도 이동함
+        화면이 기준
+    */
+    /*position: absolute;*/
+    /*left: 100px;*/
+    /*top: 100px;*/
+
+    background: red;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.box2 {
+    background: orange;
+}
+.box3 {
+    background: dodgerblue;
+}
+
+.fix {
+    width: 200px;
+    height: 200px;
+    background: gold;
+    position: fixed;
+    right: 0;
+    top: 0;
+}

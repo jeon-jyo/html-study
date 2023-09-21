@@ -1,0 +1,56 @@
+.wrap {
+    width: 900px;
+    background: white;
+    margin: 0 auto;
+}
+header {
+    height: 120px;
+    background: #1c8fd1;
+    margin-bottom: 20px;
+}
+
+.floats {
+    display : flow-root; /* 높이를 상속 받으려면 부모요소에 적기 */
+}
+/* 그냥 .floats 에 background 주면 안됨 div 각각에 줘야 함 */
+.floats div {
+    height: 400px;
+    background: orangered;
+    float: left;
+}
+.wrap .floats .left {
+    width: 200px;
+    margin-right: 20px;
+}
+.floats .center {
+    width: 420px;
+    margin-right: 20px;
+}
+.floats .right {
+    width: 240px;
+}
+
+.list {
+    background: #3a6ef2;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    display : flow-root;
+}
+.list div {
+    height: 70px;
+    background: #0b0bee;
+    float: left;
+}
+.list_box1 {
+    width: 170px;
+    margin-right: 8px;
+}
+.list_box2 {
+    width: 168px;
+}
+
+footer {
+    height: 70px;
+    background: black;
+}

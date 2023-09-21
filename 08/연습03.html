@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- 자바 스크립트 데이터 타입 -->
+    <!-- 자료형 : 값으로 활용할 수 있는 데이터의 종류 -->
+
+    <script>
+
+    // 원시타입 비원시타입
+
+    // 원시타입
+    // 하나의 공간에 하나의 데이터
+    // let num = 100;
+    // let str = "안녕하세요";
+    // let isTrue = true;
+    // let checked = undefined;
+    // let empty = null;
+
+    // 비원시타입
+    // let arr = [1, 2, 3, 4, 5];
+
+    // 1. 숫자형
+    // let num = 100;
+    // let num2 = 0.15;
+
+    // let num3 = Infinity; /* 무한대를 뜻하는 Infinity 는 어떤 수보다도 큰 값을 의미 */
+    // let num4 = Infinity;
+    // console.log(num3);  // Infinity
+    // console.log(num3 * num4);   // Infinity
+
+    // NaN : Not a Number
+    // 유효하지 않은 값 또는 표현할 수 없는 값을 표현
+    // let num5 = NaN;
+    // console.log(num5)   // NaN
+    // console.log(typeof num5)   // number
+    // console.log("100px" * 5)   // NaN : 숫자 연산에 실패
+
+    // 2. 문자형
+    // let str = "하이미디어";
+    // let str2 = "하이미디어2";
+    // console.log(typeof str);    // string
+
+    // let userName = "홍길동";
+    // let userAge = 30;
+    // let message = '유저의 이름은 ' + userName + ', 나이는 ' + userAge + ' 입니다.';
+    // console.log(message);
+
+    // 템플릿 리터럴
+    // let message2 =
+    //     `유저의
+    //     이름은 ${userName} 이고,
+    //     나이는 ${userAge} 입니다.`;
+    // console.log(message2);
+
+    // 3. 불린타입 boolean type
+    // true, false
+    // let check = true;
+    // let unCheck = false;
+    // let isTrue;
+    // let turnOn;
+
+    // 4. null, undefined
+    // let a;
+    // console.log(a);   // undefined
+    // let b = null;
+    // console.log(b);   // null
+
+    // let a = undefined;
+    // let b = null;   // 버그
+    // console.log(typeof a);  // undefined
+    // console.log(typeof b);  // object   // 원래는 null 타입
+
+    // let a = 10;
+    // let b = 10;
+    // console.log(a === b);   // true
+
+    // 심볼 Symbol : 유일무의한 값
+    // let c = Symbol(10);
+    // let d = Symbol(10);
+    // console.log(c === d);   // false
+
+    </script>
+
+</body>
+</html>

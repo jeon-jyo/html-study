@@ -1,0 +1,13 @@
+div {
+    border: 2px solid rosybrown;
+    /*width: 50px;*/
+    margin: 30px;
+}
+span {
+    border: 1px solid tomato;
+    margin: 30px;
+}
+section {
+    display: flex;
+    border: 10px solid Yellow;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Momentum App</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="dark"></div>
+
+<h2 id="clock">00:00:00</h2>
+
+<div class="center-contents">
+	<h1>What are you looking for?</h1>
+
+	<!--
+	<input> 태그의 required 속성은 폼 데이터(form data)가
+	서버로 제출되기 전 반드시 채워져 있어야 하는 입력 필드를 명시합니다.
+	 -->
+
+	<!-- 인풋에 값이 없을경우 알림창을 띄우기 위해선 폼태그 안에 작성되어야만 합니다! -->
+	<form class="hidden" id="login-form">
+		<input required maxlength="10" type="text" placeholder="What is your name?">
+		<button>LOGIN</button>
+	</form>
+
+	<!-- class="hidden" -->
+	<h2 class="hidden" id="greeting"></h2>
+	
+	<div id="quote">
+		<span></span>
+		<span></span>
+	</div>
+</div>
+
+<div class="todo-contents">
+	<div class="sideBtn" id="sideBtn"></div>
+	
+	<form id="todo-form">
+		<input required type="text" placeholder="오늘의 할 일 입력!">
+	</form>
+	
+	<ul id="todo-list"></ul>
+</div>
+
+<script src="js/greeting.js"></script>
+<script src="js/background.js"></script>
+<script src="js/todo.js"></script>
+</body>
+</html>

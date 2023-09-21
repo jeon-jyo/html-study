@@ -1,0 +1,33 @@
+/*
+    요소 위에 있는 태그가 많을 수록 셈
+*/
+
+/*main section article div {
+    color: red;
+    font-size: 30px;
+}
+section article div {
+    color: orange;
+    font-size: 30px;
+}
+article div {
+    color: yellow;
+    font-size: 30px;
+}
+div {
+    color: green;
+    font-size: 30px;
+}*/
+
+main section div {
+    color: blue;
+}
+/* article 밑의 div도 변함 */
+
+main section > div {
+    color: red;
+}
+/*
+    > 는 친부모의 자식만 변함
+    article 밑의 div는 하위요소
+*/

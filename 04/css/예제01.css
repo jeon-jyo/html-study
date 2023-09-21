@@ -1,0 +1,26 @@
+header {
+    position: relative;
+    background: brown;
+}
+.innerHeader {
+    width: 900px;
+    height: 130px;
+    background: dodgerblue;
+    margin: 0 auto;
+}
+
+.visual {
+    height: 400px;
+    background: greenyellow;
+}
+.wrap {
+    width: 900px;
+    height: 500px;
+    background: dodgerblue;
+    margin: 0 auto;
+}
+
+footer {
+    height: 90px;
+    background: #0b0bee;
+}

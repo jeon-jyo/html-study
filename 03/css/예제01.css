@@ -1,0 +1,62 @@
+.white {
+    height: 1000px;
+    background: white;
+}
+.orange {
+    width: 400px;
+    height: 400px;
+    background: orange;
+    position: relative;
+}
+.gray {
+    height: 1000px;
+    background: gray;
+    position: relative;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+.box2 {
+    width: 140px;
+    height: 140px;
+    background: blue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -70px;
+    margin-top: -70px;
+}
+.box3 {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+.box4 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    left: 400px;
+}
+.box5 {
+    width: 100px;
+    height: 100px;
+    background: purple;
+    position: absolute;
+    right: 0;
+}
+.box6 {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}

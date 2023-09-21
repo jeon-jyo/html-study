@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+header {
+    height: 80px;
+    border-bottom: 1px solid #fd582f;
+}
+.header_wrap {
+    position: relative;
+    width: 970px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header_main img {
+    margin-top: 41px;
+    margin-right: 50px;
+    float: left;
+}
+.header_manu > a > div {
+    position: relative;
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+    margin-top: 41px;
+    float: left;
+}
+.header_manu > a > div.hManu_sub {
+    font-size: 13px;
+    font-weight: bolder;
+    color: #656565;
+    line-height: 16px;
+}
+.header_manu > a > div:nth-of-type(1) {
+    margin-right: 58px;
+}
+.header_manu > a > div:nth-of-type(2) {
+    margin-right: 44px;
+}
+.header_manu > a > div:nth-of-type(3) {
+    margin-right: 50px;
+}
+.header_manu > a > div:nth-of-type(4) {
+    margin-right: 32px;
+}
+.header_manu > a > div:nth-of-type(5) {
+    margin-right: 15px;
+}
+
+.header_manu > a > div:after {
+    width: 0;
+    height: 25px;
+    content: "";
+    border-bottom: 2px solid #fd582f;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.5s;
+}
+.header_manu > a > div:hover:after {
+    width: 100%;
+}
+
+.header_sub {
+    display: flow-root;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.hSub_manu, .hSub_search {
+    display: flow-root;
+}
+.hSub_manu > a > div, button {
+    font-size: 11px;
+    font-weight: bolder;
+    color: #656565;
+    float: left;
+    cursor: pointer;
+    /*
+    .hSub_manu 의 자식요소 전부 float: left; 라서
+    부모요소 display: flow-root; 꼭 필요
+    */
+}
+.hSub_manu > a > div {
+    margin-right: 9px;
+    line-height: 20px;
+}
+.hSub_manu > a > button {
+    width: 70px;
+    height: 20px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+.hSub_manu > a > button > strong {
+    font-size: 15px;
+    color: #fd582f;
+}
+.hSub_search {
+    height: 20px;
+    margin-top: 14px;
+    position: absolute;
+    right: 0;
+    border: 1px solid #7f7f7f;
+}
+.hSub_search > input, .hSub_sub {
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+.hSub_search > input {
+    width: 128px;
+    border: 1px solid #7f7f7f;
+}
+input::placeholder {
+    color: #fd582f;
+}
+.hSub_sub {
+    width: 45px;
+    background: lightgray;
+    border: 1px solid #7f7f7f;
+}
+.hSub_sub > p {
+    font-size: 12px;
+    font-weight: bolder;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+}
+
+.visual {
+    position: relative;
+    width: 970px;
+    height: 465px;
+    margin: 50px auto 0 auto;
+}
+/*
+    position 있을 때 width 안주면 auto(100%)가 아니라
+    자식 요소에게 크기를 상속 받는다.
+*/
+/*!* 이미지 태그는 인라인 블럭 요소 *!*/
+.visual > img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.visual > img#imgSlider_next {
+    right: 0;
+}
+.vSub {
+    /*width: 55px;*/
+    /*height: 18px;*/
+    /*line-height: 55px;*/
+    padding: 3px 10px;
+    background: #fd582f;
+    font-size: 11px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.slick-dots {
+    text-align: center;
+}
+.slick-dots li {
+    /* 인라인 요소 text 취급을 해서 text-align: center; 가능 */
+    display: inline-block;
+}
+.slick-dots li > button {
+    width: 15px;
+    height: 15px;
+    background: #656565;
+    border: 1px solid #656565;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.slick-dots li:nth-last-child {
+    margin-right: 0;
+}
+.slick-dots li.slick-active > button {
+    background: #FF6633;
+    color: #FF6633;
+    border: 1px solid #FF6633;
+    transition-duration: 0.5s;
+}
+
+.board_list {
+    width: 970px;
+    height: 180px;
+    margin: 30px auto 0 auto;
+}
+.board_list > div {
+    width: 310px;
+    height: 100%;
+    float: left;
+}
+.board:nth-child(1), .board:nth-child(2) {
+    margin-right: 20px;
+}
+
+.board > div {
+    position: relative;
+    display: flow-root;
+    padding: 10px;
+    border-bottom: 1px solid #656565;
+}
+.board > div > a > p {
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+    float: left;
+}
+.board > div > a > div {
+    width: 45px;
+    height: 15px;
+    background: #fd582f;
+    font-size: 11px;
+    font-weight: bolder;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    float: left;
+}
+.board > ul {
+    position: relative;
+    padding: 10px;
+}
+.board > ul > li {
+    position: relative;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #656565;
+    margin-bottom: 8px;
+}
+.board > ul > li > a {
+    position: absolute;
+    color: #656565;
+    text-decoration: none;
+}
+.board > ul > li > span {
+    font-weight: normal;
+    float: left;
+    position: absolute;
+    right: 10px;
+}
+.board > ul > li::before {
+    width: 2px;
+    height: 3px;
+    background-image: url("../images/main/bullet01.gif");
+    content: "";    /* :before :after 는 content 꼭 필요함 */
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 3px;
+}
+
+.board > a > div.board_sub {
+    border-bottom: 1px dashed #656565;
+    position: relative;
+    display: flow-root;
+    padding-bottom: 12px;
+}
+.board .board_sub > a > p {
+    width: 210px;
+    font-size: 13px;
+    color: #fd582f;
+    line-height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.board .board_sub2 {
+    padding-top: 18px;
+}
+
+.bottom_list {
+    width: 970px;
+    height: 34px;
+    margin: 50px auto 60px auto;
+}
+.bottom_list > div > a {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px;
+    line-height: 13px;
+}
+.bottom_list > div > a > p {
+    width: 140px;
+    font-size: 8px;
+    font-weight: bolder;
+    color: #656565;
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+.bottom_list > div > a > p > strong {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+footer {
+    height: 80px;
+    background: #2b2b2b;
+}
+.footer_wrap {
+    position: relative;
+    width: 970px;
+    height: 100%;
+    margin: 0 auto;
+}
+.footer_manu, .footer_manu2 {
+    display: flow-root;
+    padding-top: 15px;
+}
+.footer_manu > a > div, .footer_manu2 > div {
+    color: #888;
+    font-size: 8px;
+    font-weight: 700;
+    float: left;
+    /*line-height: 40px;*/
+    margin-right: 20px;
+}
+.footer_manu > a > div:nth-of-type(3) {
+    color: white;
+    font-weight: 800;
+}
+.footer_manu2 > div {
+    margin-right: 0;
+}
+.footer_manu2 > div > strong {
+    margin: 0 5px;
+}
+.footer_manu3 {
+    width: 125px;
+    height: 20px;
+    background: white;
+    box-sizing: border-box;
+    padding-left: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 900;
+    color: #2b2b2b;
+    position: absolute;
+    right: 5px;
+    bottom: 45px;
+    cursor: pointer;
+}
+.footer_manu3 > strong {
+    margin-left: 15px;
+    color: #fd582f;
+}

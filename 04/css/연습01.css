@@ -1,0 +1,26 @@
+div {
+    /*width: 200px;*/   /* wrap width 가 이미 200px */
+    height: 200px;
+}
+
+.wrap {
+    width: 200px;
+    /*height: 700px;*/  /* box 가 늘어나면 소용 없음 */
+    background: gray;
+    margin: 0 auto;
+    /*
+        기존 블럭요소에서 센터로만 감
+        기존 1층 기본블럭요소만 적용 가능 / float, absolute 안됨
+
+        auto 는 남은 여백은 자동으로 반씩
+        margin left auto 는 남은 여백을 왼쪽으로 다 쓰겠다 (오른쪽으로 붙음)
+    */
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%)*/
+}
+
+.box1 {background: red}
+.box2 {background: orange}
+.box3 {background: blue}
+.box4 {background: green}

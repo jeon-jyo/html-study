@@ -1,0 +1,35 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrap1 {
+    width: 200px;
+    display: flow-root;
+    float: left;
+}
+.top {
+    height: 100px;
+    background: orange;
+}
+.left {
+    height: calc(100vh - 300px);
+    background: #2a2b2b;
+}
+.bottom {
+    height: 200px;
+    background: orange;
+}
+
+.wrap2 {
+    width: calc(100vw - 550px);
+    height: 100%;
+    background: dodgerblue;
+    float: left;
+}
+.wrap3 {
+    width: 350px;
+    height: 100%;
+    background: #ff871c;
+    float: left;
+}

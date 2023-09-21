@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- 형 변환 -->
+
+    <script>
+
+        // type conversion
+
+        // 명시적 형변환
+        // let a = 100;
+        // let b = String(a);
+        // console.log(typeof a);  // number
+        // console.log(typeof b);  // string
+        //
+        // console.log("----------");
+        //
+        // let c = "100";
+        // let d = Number(c);
+        // console.log(typeof c);  // string
+        // console.log(typeof d);  // number
+
+        // 묵시적 형변환
+        // let a = 100;
+        // let b = "100";
+        // let c = a * b;
+        // console.log(c);  // 10000   // 자바 스크립트가 알아서 형 변환 해줌
+        // console.log(typeof c);  // number
+
+        // let a = "10";
+        // let b = 10;
+        // let c = a + b;
+        // console.log(c);  // 1010
+        // console.log(typeof c);  // string
+
+        // let a = "100";
+        // let conversionA = a / 10;
+        // console.log(conversionA);   // 10
+        // console.log(typeof conversionA);  // number
+        //
+        // console.log("----------");
+        //
+        // let b = "20";
+        // let conversionB = b - 10;
+        // console.log(conversionB);   // 10
+        // console.log(typeof conversionB);    // number
+        //
+        // + 문자
+        // - 숫자
+        // * 숫자
+        // / 숫자
+        //
+        // console.log("----------");
+        //
+        // let c = "200px";
+        // let conversionC = c - 10;
+        // console.log(conversionC);   // NaN
+        // console.log(typeof conversionC);    // number
+
+        // console.log( Number("100px") );   // NaN : 형을 변환 할 수 없음
+        // console.log( Boolean(0) );   // false
+        console.log( +"100" );  // 100 : 단항연산자 . 형을 변환시킴 number
+        console.log( +true );  // 1 : 단항연산자 . 형을 변환시킴 number
+
+        console.log( Boolean(100) );   // true
+        console.log( Boolean("0") );   // true
+        console.log( Boolean("") );   // false : 빈 문자열 일 때만 false
+
+    </script>
+
+</body>
+</html>

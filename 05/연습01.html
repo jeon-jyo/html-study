@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        마진 병합 현상
+        윗 박스와 아래 박스가 마진이 겹치면 둘 중 하나만 됨 (큰 쪽)
+        그래서 마진을 쓸 때 한 방향만 씀
+        margin-bottom 혹은 margin-top 만 씀
+
+        인라인 구조에선 반응하지 않는다.
+        float: left; 는 x축 y축 다 됨
+        */
+        html {
+            /*height: 100%;*/
+        }
+        body {
+            margin: 0;
+            padding: 0;
+
+            /*height: 100%;*/
+        }
+        div {
+            /*width: 100%; !* 사실 width 의 기본값은 auto 다 *!*/
+            width: auto; /* 100% - 30px - 30px */
+            height: 200px;
+            background-color: orange;
+            margin: 30px;
+
+            /*
+                div 는 body 의 100% , body 는 html 의 100%
+                그래서 100vh 씀 * viewport height
+            */
+            /*height: 100%;*/
+            /*height: 100vh;*/
+        }
+        .box {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="box"></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

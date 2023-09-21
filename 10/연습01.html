@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        // let person_name = "JH";
+        // let person_age = 25;
+        // let person_gender = "여성";
+        // let person_run = () => {
+        //     console.log("달린다!");
+        // }
+        // let person_say = () => {
+        //     console.log("안녕");
+        // }
+
+        // 객체 생성자 방식
+        // let person = new Object({key: "1", key2: "2"});
+
+        // 객체 리터럴 방식
+        let person2 = {  // 객체 Object
+            key : "value",  // key 와 value 를 묶어서 property
+            key1 : true,  // 멤버
+            key2 : null,
+            key3 : undefined,
+            key4 : function () { console.log("안녕!") },  // 메서드 : 방법
+            key5 : {
+              a: 10,
+              b: 20,
+              c: 30
+            },
+            key6 : [1, 2, 3, 4, 5],
+            run: function () {
+                console.log("달린다!")
+            },
+        };
+
+        // Object.keys(person2).forEach(v => console.log(typeof v));   // string
+        // person2.key4();  // 메서드 호출
+
+        // 점 표기법
+        // console.log( person2.key );  // value
+
+        // 대괄호 표기법
+        // const a = "key1";
+        // console.log( person2[a] );  // true
+        // console.log( person2["key2"] );  // null
+        // console.log( person2["key3"] );  // undefined
+
+        // function getProperty(key) {
+        //     return person2[key];
+        // }
+        //
+        // console.log( getProperty("key1") );  // true
+
+        let user = {
+            name: "JH",
+            age: 25
+        };
+
+        // let key = prompt("사용자의 어떤 정보를 얻고 싶으신가요?");
+        // console.log( user[key] );
+
+        // 객체의 프로퍼티 추가
+        // user.gender = "여성";
+        // user["location"] = "서울";    // 대괄호 표기법
+        // console.log( user );
+
+        // 객체의 프로퍼티 삭제
+        // delete user.gender;  // gender 는 사라지지만 데이터는 남아있음
+        // user.gender = null;  // 데이터 날려버림 . 많이 쓰는 방법
+        // console.log( user );
+
+        // console.log( user.hello );  // undefined
+        // console.log( "name" in user );  // true or false
+
+        // if ( user.hello === undefined ) {
+        //     user.hello = "안녕";
+        // }
+        // console.log( user );
+
+        // const obj = {} 는 프로퍼티 추가, 수정, 삭제 가능
+        const obj = {
+            a : 10,
+            b : 20
+        }
+
+        obj.a = 40;
+        obj.c = 30;
+        obj.d = 50;
+        obj.d = null;
+        console.log( obj );  // {a: 40, b: 20, c: 30, d: null}
+
+        // obj 자체를 바꾸는건 안됨
+        // obj = {
+        //     d : 50
+        // };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>shopping_cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css 는 로드 되기 전 / script 는 로드 되고 난 후 -->
+<!--    <script>-->
+<!--        // 모두 로드 된 이후에 실행한다-->
+<!--        window.addEventListener("DOMContentLoaded", () => {-->
+<!--            // let 은 업데이트 가능한 것-->
+<!--            // const 는 변하지 않는 상수-->
+<!--            const section = document.querySelector('section');-->
+
+<!--            console.log(section);-->
+<!--        })-->
+<!--    </script>-->
+</head>
+<body>
+
+<section>
+    <div class="item">
+        <img src="images/model-female.png" alt="">
+
+        <div class="detail">
+
+            <div class="title">
+                <div class="price">$55.99</div>
+                <h2>
+                    <strong>Nightgown</strong><br>
+                    Women's Designer Wear
+                </h2>
+            </div>
+
+            <div class="info">
+                <div class="size">
+                    <div class="size_title">Sizes</div>
+                    <div class="size_item">
+                        <div>XS</div>
+                        <div>S</div>
+                        <div>M</div>
+                        <div>L</div>
+                        <div>XL</div>
+                    </div>
+                </div>
+                <div class="color">
+                    <div class="color_title">Colors</div>
+                    <div class="color_item">
+                        <div class="green"></div>
+                        <div class="red"></div>
+                        <div class="pink"></div>
+                        <div class="aqua"></div>
+                        <div class="blue"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button>Add to Cart</button>
+
+        </div>
+    </div>
+</section>
+
+<script>
+<!-- 1. 컬러박스를 클릭 2. 액션을 발생시킨다 3. 액션이 발생하지 않는 요소는 기존 액션 삭제 -->
+
+    console.log(document.querySelector('.color_item div'));
+    console.log(document.querySelectorAll('.color_item div'));
+
+    const colorBoxes = document.querySelectorAll('.color_item div');
+
+    // 배열로 만든 아이를 반복문으로 function 을 주고 item 처리
+    // colorBoxes.forEach(function (item) {});
+
+    colorBoxes.forEach(function (item) {
+        item.addEventListener('click', function (event) {
+            // console.log(item);
+            // alert(item);
+
+            // 1.
+            // const next = event.target.nextElementSibling;
+            // const prev = event.target.previousElementSibling;
+            //
+            // if (next && prev) {
+            //     // 집합
+            //     [next, prev].forEach(function (value) {
+            //         value.classList.remove('on');
+            //     });
+            // } else if (prev) {
+            //     prev.classList.remove('on');
+            // } else {
+            //     next.classList.remove('on');
+            // }
+            //
+            // event.target.classList.toggle('on');
+
+            // 2.
+            // const a = document.querySelector('.on');
+            // if(a){
+            //     a.classList.remove('on');
+            // }
+            //
+            // event.target.classList.toggle('on');
+
+            // 3.
+            const children = event.target.parentElement.children;
+            // => arrow functionㄴ
+            // ... spread(*펼치다, 퍼뜨리다) 연산자
+            [...children].forEach(v => v.classList.remove('on'));
+
+            this.classList.add('on');
+        })
+    });
+</script>
+
+</body>
+</html>

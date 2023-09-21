@@ -1,0 +1,23 @@
+.floatBox {
+    width: 800px;
+    background: #cccccc;
+    display: flow-root;
+}
+.floatBox div {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.float01 {
+    background: #92c32a;
+}
+.float02, .float07 {
+    background: #e63b67;
+}
+.float03, .float06 {
+    background: #1c8fd1;
+}
+.float04, .float05 {
+    background: #ff7612;
+}

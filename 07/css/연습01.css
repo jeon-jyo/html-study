@@ -1,0 +1,30 @@
+/* ctrl alt L 예쁘게 코드 정리*/
+
+#imgSlider div {
+    border: 3px solid black;
+}
+
+.imgSlider_btn {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.slick-dots {
+    background: red;
+    text-align: center;
+    margin: 0 auto;
+}
+.slick-dots li {
+    width: 15px;
+    height: 15px;
+    background: orange;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.slick-dots li button {
+    /* 페이지 번호 안보이게 */
+    display: none;
+}

@@ -1,0 +1,47 @@
+.wrap {
+    position: relative;
+    height: 2000px;
+}
+.wrap1 {
+    height: 1000px;
+    background-color: white;
+}
+
+.wrap2 {
+    bottom: 1000px;
+    height: 1000px;
+    background-color: gray;
+}
+
+.box1 {
+    width: 660px;
+    height: 450px;
+    background: green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -225px 0 0 -330px;
+}
+.box2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: black;
+}
+.box3 {
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    background: black;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -200px;
+}
+.box4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: black;
+    left: 100%;
+    bottom: 100%;
+}

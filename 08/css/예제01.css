@@ -1,0 +1,70 @@
+h1 {
+    font-size: 50px;
+    margin-top: 25px;
+    text-align: center;
+}
+.wrap2 > button {
+    font-weight: bold;
+}
+.wrap3 > button {
+    font-size: 20px;
+}
+.wrap3 > button > strong.balance {
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.wrap1 {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+.wrap1 > button {
+    width: 400px;
+    height: 100%;
+    background: white;
+    font-size: 20px;
+    border: 2px solid papayawhip;
+    float: left;
+}
+.wrap1 > button.active {
+    background: paleturquoise;
+}
+
+.wrap2 {
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    font-weight: bold;
+    line-height: 45px;
+}
+.wrap2 > div {
+    width: 50px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.wrap2 > button {
+    width: 100px;
+    /*height: 100%;*/
+    background: palegoldenrod;
+    font-size: 15px;
+    border: 1px solid palegoldenrod;
+    margin-left: 5px;
+}
+
+.wrap3 {
+    width: 250px;
+    height: 100px;
+    margin: 50px auto 0 auto;
+}
+.wrap3 > button {
+    width: 100%;
+    height: 100%;
+    background: palegreen;
+    border: 1px solid palegreen;
+}

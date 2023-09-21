@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>하이미디어</title>
+    <link rel="stylesheet" href="01.css">
+</head>
+<body>
+    <!--
+    html 태그 : 조상태그
+    실질적으로 화면에 출력이 안됨 Ctrl+/
+
+    Shift Ctrl Art L - 자동으로 예쁘게 줄바꿈
+    Shift Enter - 한칸 밑으로
+    Ctrl D - 밑으로 복붙
+    <ul>li*10</ul> 하고 tab - 자동으로 <> 태그 생김
+    -->
+
+    <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong><br>
+    <mark style="background-color: olivedrab">A accusamus adipisci,</mark><br>
+    <em>alias aliquid dicta dolore dolores doloribus eius exercitationem expedita,</em><br>
+    <a href="https://www.naver.com" target="_blank">incidunt ipsa minus neque praesentium quaerat reprehenderit ut vero voluptate.</a><br>
+
+    <!--
+    mark 바탕색 / em 일반강조(날림체) / a 링크
+    target="_blank" 새 창
+    target="_self" 바로가기
+    -->
+
+    <hr>
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/AA5BkF0LJKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <video width="200" height="200" src="video.mp4" autoplay controls></video><br>
+
+    <!--
+    유튜브 직접링크 / 다운된 영상 첨부
+    autoplay muted - 크롬은 muted (음소거) 해야 autoplay 됨
+    controls 재생바
+    -->
+
+    <hr>
+
+    <img src="image.png">
+    <a href="#">네이버</a>
+
+    <div style="border: 10px solid black">
+        <a href="https://www.naver.com">
+            <img src="image.png" width="200" height="100">
+        </a>
+    </div>
+
+    <section style="border: 10px solid hotpink">
+        <div style="border: 10px solid black">
+            <a href="https://www.naver.com">
+                <img src="image.png" width="200" height="100">
+            </a>
+        </div>
+    </section>
+
+    <!--
+
+    [학생1, 학생2].map -> 페이스북 형식
+
+    src="abc.jpg"
+    src 속성 / abc.jpg 속성값
+
+    속성만으로도 할 수 있음 : autoplay
+
+    <img> <input> 처럼 닫는거 필요없이 단독으로 쓸 수 있는건 빈태그
+
+    -->
+
+    <hr>
+    <!--
+    h는 head 태그
+    h1 브랜드 / h2 타이틀
+    -->
+    <h1>하이미디어</h1>
+    <h2>하이미디어</h2>
+    <h3>하이미디어</h3>
+    <h4>하이미디어</h4>
+    <h5>하이미디어</h5>
+    <h6>하이미디어</h6>
+
+    <hr>
+    <!-- unlist 순서가 상관없는 리스트 -->
+    <ul>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+    </ul>
+
+    <ul>li*10</ul>
+
+    <hr>
+    <!-- 순서가 필요있는 order list -->
+    <ol>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+    </ol>
+
+    <hr>
+    <!-- dictionary list -->
+    <dl>
+        <dt>용어의제목</dt>
+        <dd>용어의설명</dd>
+    </dl>
+
+    <hr>
+
+    <input type="text" placeholder="User ID Plz">
+    <button>로그인</button>
+    <br>
+    <input type="password" placeholder="User PW Plz">
+    <button>회원가입</button>
+    <br>
+    <input type="date">
+    <input type="checkbox">
+    <br>
+    <input type="file">
+
+    <hr>
+
+    <!--
+        html은 블럭, 인라인 두가지 요소가 있다
+
+        블럭 : 세로로 쌓기 / 목적이 없을 때 div / body 전체 씀
+            x축 y축 여백 설정 가능 (width 자동 100%) / 모든 값에 제한이 없지만 세로로 나온다
+
+        인라인 : 가로로 쌓기 / 목적이 없을 때 span / 컨텐츠 크기 만큼만 씀
+            css 적용 시 width height 적용할 수 없음 (img input 태그는 가능) / y축 안됨
+
+        y축 관련 컨트롤 X
+    -->
+
+    <div>블럭요소</div>
+    <div>블럭요소</div>
+    <div>블럭요소</div>
+    <div>블럭요소</div>
+    <div>블럭요소</div>
+
+    <hr>
+
+    <span>인라인요소</span>
+    <span>인라인요소</span>
+    <span>인라인요소</span>
+    <span>인라인요소</span>
+    <span>인라인요소</span>
+
+    <hr>
+
+    <div style="border: 2px solid aquamarine">
+        <a href="#">네이버</a>
+        <a href="#">네이버</a>
+        <a href="#">네이버</a>
+    </div>
+    <div style="border: 2px solid aquamarine">
+        <a href="#">네이버</a>
+        <a href="#">네이버</a>
+        <a href="#">네이버</a>
+    </div>
+
+    <hr>
+
+    <p>내용을 담당</p>
+    <p>내용을 담당</p>
+    <p>내용을 담당</p>
+
+    <hr>
+
+    <section>
+        <div style="border: 1px solid red; width: 300px">
+            <img src="image.png" width="200" height="100">
+            <h2>무슨무슨 상의</h2>
+            <span>S</span>
+            <span>M</span>
+            <span>L</span>
+
+            <p>이 옷은 기능성 옷입니다.</p>
+            <p>가격은 얼마입니다.</p>
+        </div>
+
+        <div style="border: 1px solid red; width: 300px">
+            <img src="image.png" width="200" height="100">
+            <h2>무슨무슨 상의</h2>
+            <span>S</span>
+            <span>M</span>
+            <span>L</span>
+
+            <p>이 옷은 기능성 옷입니다.</p>
+            <p>가격은 얼마입니다.</p>
+        </div>
+
+        <div style="border: 1px solid red; width: 300px">
+            <img src="image.png" width="200" height="100">
+            <h2>무슨무슨 상의</h2>
+            <span>S</span>
+            <span>M</span>
+            <span>L</span>
+
+            <p>이 옷은 기능성 옷입니다.</p>
+            <p>가격은 얼마입니다.</p>
+        </div>
+    </section>
+
+</body>
+</html>

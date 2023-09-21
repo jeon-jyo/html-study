@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #eee;
+}
+section {
+    height: 100vh;
+}
+
+/* 인라인 태그는 자기 자신 크기만큼 */
+header {
+    position: relative;
+    height: 60px;
+    background: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+header a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative;
+    height: calc(100vh - 60px); /* header 빼고 전체 */
+    box-sizing: border-box;
+}
+
+.login {
+    width: 360px;
+    /*height: 600px;*/
+    /*background: yellow;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* text 는 인라인 태그 */
+.login h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.login > div {
+    position: relative;
+    border: 2px solid lightgray;
+    font-size: 18px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 300;
+}
+
+.login .btn1 {
+    color: #222;
+    background: white;
+}
+.login .btn2 {
+    background: #9d9fab;
+}
+.login .btn3 {
+    background: #3ed330;
+}
+.login .btn4 {
+    background: #308df9;
+}
+.login .btn5 {
+    background: #30c84d;
+}
+
+.login div img {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    /* transform: translate(x축, y축); */
+    transform: translate(0, -50%);
+}
+
+.login article {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #222;
+    font-weight: 300;
+}
+
+.login article:before,
+.login article:after {
+    content: "";
+    width: 43%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.login article:before {
+    left: 0;
+}
+.login article:after {
+    right: 0;
+}
+/*
+     * 가상 선택자
+
+     .login article:before {
+        content: "이전";
+    }
+    .login article:after {
+        content: "이후";
+    }
+ */
+
+/*.login article {*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*    font-size: 16px;*/
+/*    border: 2px solid black;*/
+/*}*/
+/*.login article div {*/
+/*    width: 45%;*/
+/*    height: 1px;*/
+/*    background: red;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    transform: translate(0, -50%);*/
+/*}*/
+/*.login article .left {*/
+/*    left: 0;*/
+/*}*/
+/*.login article .right {*/
+/*    right: 0;*/
+/*}*/
+
+.login .login-footer {
+    text-align: left;
+    font-size: 16px;
+    padding: 0;
+    color: #222;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+.login p {
+    color: #222;
+    text-align: center;
+    font-weight: 300;
+}
+
+.login p a {
+    color: black;
+    font-weight: 400;
+    text-decoration: none; /* 밑줄 안보이게 */
+}
+.login p:hover a {
+    text-decoration: underline; /* 밑줄 보이게 */
+}

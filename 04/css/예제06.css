@@ -1,0 +1,51 @@
+.visual {
+    position: relative;
+    height: 350px;
+    background: blue;
+}
+
+header {
+    width: 1000px;
+    height: 80px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%);
+}
+
+.container {
+    width: 1000px;
+    background: purple;
+    display: flow-root;
+    margin: 20px auto 0 auto;
+}
+.container > div {
+    float: left;
+}
+.container > div > div {
+    width: 180px;
+    height: 198px;
+    background: orange;
+}
+.contents_sub {
+    margin-bottom: 4px;
+}
+
+.contents1, .contents2 {
+    width: 314px;
+    height: 400px;
+    background: orange;
+    float: left;
+    margin-left: 4px;
+}
+.contents2 {
+    margin-right: 4px;
+}
+
+footer {
+    width: 1000px;
+    height: 50px;
+    background: black;
+    margin: 20px auto 0;
+}

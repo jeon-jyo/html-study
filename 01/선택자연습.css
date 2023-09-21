@@ -1,0 +1,46 @@
+h1 {
+    background-color: #ff4545
+}
+.class_box {
+    background-color: #349eda;
+}
+#id_box {
+    background-color: #54c741;
+}
+.color_box {
+    background-color: #c53cc3;
+}
+a {
+    background-color: #e7d93f;
+}
+#color_box {
+    background-color: #1fb2cd;
+}
+.bg {
+    background-color: #ff871c;
+}
+
+
+
+/* 태그선택자 */
+div {
+    background-color: orange;
+}
+/* 클래스선택자 */
+.box1 {
+    background-color: mediumpurple;
+}
+.box1 {
+    background-color: red;
+}
+.box5 {
+    background-color: blue;
+}
+/* 아이디선택자 */
+#box5 {
+    background-color: aqua;
+}
+
+.box3 a {
+    background-color: green;
+}

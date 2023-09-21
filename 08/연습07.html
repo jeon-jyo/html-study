@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- 조건문 -->
+
+    <script>
+
+        // let a = 10;
+        // let b = 20;
+        //
+        // if( a === b ) {
+        //     console.log("일치합니다");
+        // }
+
+        // const num = prompt("숫자를 입력하세요.");
+        //
+        // console.log( typeof num );   // string
+        //
+        // if( num > 10 ) {   // > 비교할 때 형 변환
+        //     alert("입력하신 숫자는 10 초과입니다.");
+        // }
+        //
+        // "0" 은 문자열 - ture / "" 은 아무값이 없음 - false
+        // if ("0") {
+        //     console.log("안녕하세요!");
+        // }
+
+        // const num = prompt("숫자를 입력하세요.");
+        // if( num > 10 ) {
+        //     alert("입력하신 숫자는 10을 초과입니다.");
+        // } else {
+        //     alert("입력하신 숫자는 10 이하 입니다.")
+        // }
+
+        // prompt 명령창에 입력받은 데이터를 가지고
+        // 조건문을 완성
+
+        // 18 이상일 경우 성인 입니다를 출력
+        // 15 이상일 경우 청소년 입니다를 출력
+        // 5 이상일 경우 어린이 입니다를 출력
+        // 모두 포함되지 않을 경우 유아입니다를 출력
+
+        // const num = prompt("나이를 입력하세요.");
+
+        // if ( num >= 18 ) {
+        //     alert("성인 입니다.")
+        // } else if ( num >= 15 ) {
+        //     alert("청소년 입니다.")
+        // } else if ( num >= 5 ) {
+        //     alert("어린이 입니다.")
+        // } else {
+        //     alert("유아 입니다.")
+        // }
+
+        // if ( num >= 18 ) alert("성인 입니다.")
+        //     else if ( num >= 15 ) alert("청소년 입니다.");
+        //     else if ( num >= 5 ) alert("어린이 입니다.");
+        //     else alert("유아 입니다.");
+
+        // const country = prompt("국가코드를 입력하세요.");
+        //
+        // if ( country === "ko" ) {
+        //     console.log(" 대한민국 ")
+        // } else if ( country === "usa" ) {
+        //     console.log(" 미국 ")
+        // } else if ( country === "jp" ) {
+        //     console.log(" 일본 ")
+        // } else {
+        //     console.log(" 미 분류 ")
+        // }
+
+        // const age = prompt("나이를 입력하세요.");
+        // console.log(typeof age);    // string
+        const age = +prompt("나이를 입력하세요.");
+        console.log(typeof age);    // number
+
+        // switch-case
+        // switch() 에는 데이터 자유롭게 가능, case 에는 상수만 가능
+        // case 뒤에 변수, 조건식 x -> if else if 조건문을 사용
+
+        // 미 분류
+        switch (age) {
+            case (age >= 18) :    // country === "ko" 보다 직관적으로 쓸 수 있음
+                console.log("성인 입니다.");
+                break;
+            case (Number(age) >= 15) :
+                console.log("청소년 입니다.");
+                break;
+            default:
+                console.log("미 분류");
+                break;
+        }
+
+    </script>
+
+</body>
+</html>

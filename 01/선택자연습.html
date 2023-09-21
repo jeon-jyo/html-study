@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="선택자연습.css">
+</head>
+<body>
+
+  <h1>타입선택자(태그명)</h1>
+
+  <div class="class_box">클래스 선택자</div>
+
+  <div id="id_box">아이디 선택자</div>
+
+  <div class="color_box">
+    <a href="#">선택자 조합01</a>
+  </div>
+
+  <ul id="color_box">
+    <li>선택자 조합02_01</li>
+    <li class="bg">선택자 조합02_02</li>
+    <li>선택자 조합02_03</li>
+  </ul>
+
+  <hr>
+
+  <!--
+  선택자의 우선순위
+  아이디 > 클래스 > 태그
+  -->
+
+  <div class="box1"><a>aaa</a>선택자</div>
+  <div class="box2"><a>aaa</a>선택자</div>
+  <div class="box3"><a>aaa</a>선택자</div>
+  <div class="box4"><a>aaa</a>선택자</div>
+  <div class="box5" id="box5"><a>aaa</a>선택자</div>
+
+  <!--
+  영문이 먼저 오고 언더바
+  같은 class, id 중 마지막 css 기준
+  class 보다 id가 더 유니크하고 세다
+  -->
+
+</body>
+</html>

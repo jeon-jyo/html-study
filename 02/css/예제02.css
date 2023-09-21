@@ -1,0 +1,43 @@
+.floatList {
+    background: lightgray;
+    width: 660px;
+    display: flow-root;
+}
+.floatList > div {
+    background: greenyellow;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+.floatList .box1 {
+    width: 420px;
+}
+
+
+
+/* 초기화 */
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.floatList2 {
+    background: lightgray;
+    width: 660px;
+    display: flow-root;
+}
+.floatList2 > li {
+    background: orangered;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+.floatList2 .box1 {
+    height: 420px;
+}
+.floatList2 .box2 {
+    float: right;
+}

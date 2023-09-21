@@ -1,0 +1,15 @@
+/*
+    전체 div 가 바뀌기 때문에 잘 쓰지 않는다.
+    div {}
+*/
+
+.scene1 div {}
+
+.scene2 div {}
+.box {}
+.scene2 > div {}
+
+.wrap {}
+.wrap div {}
+
+.wrap .box1 {}

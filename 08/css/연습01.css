@@ -1,0 +1,56 @@
+.wrap {
+    width: 1000px;
+    height: 300px;
+    background: dodgerblue;
+    margin: 0 auto;
+
+    /*
+    display: flex;
+    알아서 정렬 포인트를 만들어줌
+    작은 요소의 단위들을 부모요소 .wrap 이 관리
+    윗 요소와 아래 요소가 유기적으로 움직임
+    가로로 배치하는게 기본
+    박스 외부로 보내지 않음. 안의 박스들이 작아짐
+    */
+    display: flex;
+    /*flex-wrap: nowrap;  !* 기본값 *!*/
+    flex-wrap: wrap;    /* 아래로 자동으로 넘어감 */
+
+    /* 가로축 - 중심축 */
+    /*justify-content: center;    !* 중앙으로 정렬 *!*/
+    /*justify-content: end;   !* 우측으로 정렬 *!*/
+    /*justify-content: left;*/
+    /*justify-content: space-between; !* 요소들 사이에 동일한 간격 *!*/
+    /*justify-content: space-around;   !* 여백을 똑같이 쓰고 싶을 때 *!*/
+
+    /*
+    세로축 - 교차축
+    align : 수직정렬 , y축 정렬
+    */
+    /*align-items: normal;*/
+    /*align-items: stretch;   !* default : 컨테이너의 맞게 늘림 *!*/
+    /*align-items: center;    !* 세로 축의 중앙으로 정렬 *!*/
+    /*align-items: end;   !* 최하단으로 정렬 *!*/
+    /*align-items: start;   !* 최상단으로 정렬 *!*/
+}
+
+.wrap div {
+    width: 150px;
+    /*height: 150px;*/
+    background: orange;
+    box-sizing: border-box;
+    border: 3px solid black;
+}
+
+.wrap .box1 {
+    /*height: 250px;*/
+    background: red;
+}
+.wrap .box2 {
+    /*height: 175px;*/
+    background: green;
+}
+.wrap .box3 {
+    /*height: 125px;*/
+    background: purple;
+}

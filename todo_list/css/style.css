@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../font/NanumBarunGothicBold.ttf");
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../font/NanumBarunGothic.ttf");
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 200;
+    src: url("../font/NanumBarunGothicLight.ttf");
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 100;
+    src: url("../font/NanumBarunGothicUltraLight.ttf");
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+    margin: 0 20px;
+    font-family: 'NanumBarunGothic', 'monospace';
+}
+
+.wrap {
+    width: 1200px;
+    height: 800px;
+    background: papayawhip;
+}
+.wrap .loginForm {
+    width: 600px;
+    height: 200px;
+    background: navajowhite;
+    float: left;
+}
+.wrap .greeting {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.wrap .memoForm {
+    width: 600px;
+    height: 600px;
+    background: navajowhite;
+    float: left;
+}
+.wrap .todoForm {
+    width: 600px;
+    height: 400px;
+    float: right;
+}
+.wrap .todoForm2 {
+    width: 600px;
+    height: 400px;
+    float: left;
+}
+.wrap > div > form > input {
+    width: 400px;
+    height: 25px;
+}
+.wrap > div > form > button {
+    height: 30px;
+}
+.wrap .todoForm > div, .wrap .todoForm2 > div,
+.wrap .memoForm > div {
+    height: 370px;
+    font-size: 25px;
+    line-height: 50px;
+}

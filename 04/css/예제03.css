@@ -1,0 +1,43 @@
+section {
+    width: 1000px;
+    background: white;
+    margin: 0 auto;
+}
+header {
+    height: 100px;
+    background: orange;
+    margin-bottom: 20px;
+}
+
+.floats {
+    display: flow-root;
+}
+.snb {
+    width: 200px;
+    height: 700px;
+    background: blue;
+    float: left;
+}
+.contents {
+    width: 790px;
+    height: 700px;
+    background: lawngreen;
+    float: right;
+}
+
+.bottom_list {
+    width: 330px;
+    height: 130px;
+    background: purple;
+    margin-top: 30px;
+    float: left;
+}
+.margin {
+    margin-right: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    height: 50px;
+    background: #0b0bee;
+}

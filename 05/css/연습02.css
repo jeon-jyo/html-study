@@ -1,0 +1,14 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.fa {
+    font-size: 100px;
+    color: lightpink;
+}
+
+div {
+    font-size: 0;
+}
+span {
+    background: yellowgreen;
+    font-size: 20px;
+}

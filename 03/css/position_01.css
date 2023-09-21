@@ -1,0 +1,43 @@
+.wrap {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background: gray;
+    margin: 200px auto;
+}
+.wrap div {
+    width: 200px;
+    height: 200px;
+}
+
+.wrap .box1 {
+    background: orange;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.wrap .box2 {
+    background: blue;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.wrap .box3 {
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.wrap .box4 {
+    background: mediumpurple;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.wrap .box5 {
+    background: green;
+    position: absolute;
+    left: 50%;  /* wrap 600px 의 50%인 300px */
+    top: 50%;
+    margin: -100px 0 0 -100px; /* 자기 크기의 반을 뺀다 */
+}

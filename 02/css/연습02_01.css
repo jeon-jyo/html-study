@@ -1,0 +1,44 @@
+/* 높이를 안쓰면 안에 있는 컨텐츠 만큼 나옴 : 상속
+ 자식요소는 상위요소한테 자신의 높이를 상속시킴 */
+.wrap {
+    width: 700px;
+    /*height: 3000px;*/
+    background: orange;
+    display: flow-root;
+}
+/*
+    상속 받을 수 있음
+    overflow: hidden;
+    display: flow-root; (float 사용한 박스를 담고 있을 때)
+*/
+
+.wrap div {
+    width: 200px;
+    height: 200px;
+}
+
+/* 부모요소에게 전달이 안되면 부모요소는 없어짐
+상속을 받게 하거나 부모요소 높이를 만들어줌 */
+.wrap .box1 {
+    background: red;
+    float: left
+}
+.wrap .box2 {
+    background: dodgerblue;
+    float: left
+}
+.wrap .box3 { background: yellow;
+    float: left
+}
+.wrap .box4 { background: green;
+    float: left
+}
+.wrap .box5 { background: purple;
+    float: left
+}
+
+.black {
+    width: 700px;
+    height: 200px;
+    background: black;
+}

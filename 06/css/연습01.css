@@ -1,0 +1,101 @@
+body {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+span {
+    display: block; /* 인라인 요소를 블럭으로 사용 가능 */
+    width: 50px;
+    height: 50px;
+    background: red;
+    margin: 5px;
+}
+
+div {
+    display: inline; /* 별로 사용하지 않음 */
+    width: 50px;
+    height: 50px;
+    background: orange;
+    margin: 5px;
+}
+
+.box article {
+    vertical-align: middle; /* 센터 정렬 */
+    /*vertical-align: bottom; !* 차트 형식 *!*/
+
+    display: inline-block;
+    /*
+        요소 속성은 인라인
+        인라인 처럼 엔터 먹음 / 크기 설정 됨
+    */
+    text-align: center;
+
+    width: 250px;
+    height: 250px;
+    background: black;
+    color: #fff;
+    margin: 5px;
+}
+
+/*!* 어떤 요소 안에서의 nth 1 *!*/
+.box article:nth-child(1){
+    height: 150px;
+    background: blue;
+    line-height: 150px; /* div 에 영향을 주지 않고 위아래 행간 조절 */
+}
+article:nth-child(2) {
+    background: green;
+    line-height: 250px;
+}
+
+/*!* 같은 태그요소가 세번째여야 인식함 *!*/
+/*article:nth-child(3){*/
+/*    background: yellowgreen;*/
+/*}*/
+
+/*!* 다른 태그요소가 있다면 건너뛰고 그 다음 article 3 *!*/
+article:nth-of-type(3){
+    height: 350px;
+    background: yellowgreen;
+    line-height: 350px;
+}
+article:last-child{
+    background: red;
+}
+
+.box2 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: orange;
+}
+.box2 div {
+    width: 100px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    color: #fff;
+    opacity: 0; /* 투명도 */
+
+    /*display: none;*/  /* 실제로 없는 것 처럼 취급해서 다른 요소가 들어갈 수 있음 */
+    /*
+        display: none; 일 때 transition 줘도 작동 안함
+        0~1 같이 변화하는 중 중간 과정이 있는 것만 가능
+    */
+    /*transition: 1s 2s; !* duration(물체 변형 시간) / delay(지연 시간) *!*/
+    transition-duration: 1s;
+    /*transition-delay: 2s;*/
+    transition-timing-function: linear; /* 이동 모션 */
+}
+
+.box2:hover div {
+    left: 0;
+    opacity: 1;
+    /*display: block;*/
+}
+
+.p1 {
+    display: none;
+}

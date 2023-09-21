@@ -1,0 +1,61 @@
+/*.container {*/
+/*    background: greenyellow;*/
+/*    width: 900px;*/
+/*    height: 700px;*/
+/*}*/
+/*.left {*/
+/*    background: blue;*/
+/*    width: 300px;*/
+/*    height: 700px;*/
+/*    float: left;*/
+/*}*/
+/*.contents {*/
+/*    background: red;*/
+/*    width: 590px;*/
+/*    height: 700px;*/
+/*    margin-left: 310px;*/
+/*}*/
+
+/*.container {*/
+/*    background: greenyellow;*/
+/*    width: 900px;*/
+/*    height: 700px;*/
+/*}*/
+/*.left {*/
+/*    background: blue;*/
+/*    width: 300px;*/
+/*    height: 700px;*/
+/*    float: left;*/
+/*    margin-right: 10px;*/
+/*}*/
+/*.contents {*/
+/*    background: red;*/
+/*    width: 590px;*/
+/*    height: 700px;*/
+/*    float: left;*/
+/*}*/
+
+.container {
+    background: purple;
+    width: 900px;
+    display: flow-root;
+}
+.left {
+    background: greenyellow;
+    width: 300px;
+    height: 280px;
+    float: left;
+}
+.center {
+    background: blue;
+    width: 280px;
+    height: 280px;
+    margin: 0 10px;
+    float: left;
+}
+.right {
+    background: red;
+    width: 300px;
+    height: 280px;
+    float: left;
+}

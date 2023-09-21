@@ -1,0 +1,38 @@
+.box1 {
+    background: orange;
+    width: 200px;
+    height: 200px;
+}
+.box1 .child {
+    /* border : 선의두께 선의종류 선의색상 */
+    border: 2px solid black;
+    background: dodgerblue;
+    width: 100px;
+    height: 100px;
+}
+.box1 .child .min {
+    width: 30px;
+    height: 30px;
+    background: green;
+}
+.box2 {
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+section {
+    width: 800px;
+    height: 800px;
+    background: greenyellow;
+}
+section .wrap {
+    width: 600px;
+    height: 600px;
+    background: mediumblue;
+}
+section .wrap .wrap_child {
+    width: 400px;
+    height: 400px;
+    background: orange;
+}

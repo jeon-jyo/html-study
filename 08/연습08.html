@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            background: orange;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">box</div>
+    <div class="box2">box</div>
+    <div class="box3">box</div>
+
+    <!-- function 함수 -->
+
+    <script>
+
+        // let width1 = 100;
+        // let height1 = 100;
+        // let area1 = width1 * height1;
+        // console.log(area1); // 10000
+
+        // (width, height) 는 매개변수
+        // function calcArea(width, height) {
+        //     // let width = 100;
+        //     // let height = 100;
+        //     let area = width * height;
+        //     console.log(area);
+        // }
+        //
+        // (100, 100) 은 인수
+        // calcArea(100, 100); // 함수 호출    // 10000
+        // calcArea(100, 200); // 함수 호출    // 20000
+        // calcArea(50, 50);   // 함수 호출    // 2500
+
+        // function getArea(width, height) {
+        //     return height;  // 반환값
+        //     // return undefined // 기본값
+        // }
+        //
+        // console.log( getArea("", 200) );    // 200
+        //
+        // document.querySelector(".box1").style.height = getArea("", 100) + "px";
+        // document.querySelector(".box2").style.height = `${getArea("", 200)}px`;
+        // document.querySelector(".box3").style.height = `${getArea("", 300)}px`;
+
+        // let a = 100;    // 전역 변수
+        // function foo() {
+        //     let b = 200;    // 지역 변수
+        //     console.log(b); // 2. 200
+        // }
+        // // console.log(b); // 1. Uncaught ReferenceError: b is not defined
+        // foo();
+
+        // 자바 스크립트 FP : Function project
+        // 자바 OOP : Object-Oriented Programming
+
+        // 콜백함수 callback function
+        // function foo(a, b, c) {
+        //     if (a) {
+        //         b();    // foo2() 실행
+        //     } else {
+        //         c();
+        //     }
+        // }
+        // function foo2() {
+        //     alert("두번째 함수입니다.");
+        // }
+        // function foo3() {
+        //     alert("세번째 함수입니다.");
+        // }
+        //
+        // foo(true, foo2, foo3);
+
+        // function checkMood(mood, goodCallback, badCallback) {
+        //     if (mood === "good") {
+        //         goodCallback();
+        //     } else {
+        //         badCallback();
+        //     }
+        // }
+        //
+        // function cry() {
+        //     console.log("ACTION :: CRY");
+        // }
+        // function sing() {
+        //     console.log("ACTION :: SING");
+        // }
+        //
+        // checkMood("good", sing, cry);
+        // checkMood("bed",
+        // function () {console.log("ACTION :: SING");},   // 익명함수
+        // () => cry());   // () => cry 의 의미는 function() { cry };
+
+        // var num1 = 100; // 전역변수
+        // function foo() {
+        //     var num2;
+        //
+        //     console.log(num1); // 100
+        //     console.log(num2); // undefined
+        //     // console.log(num3);  // Uncaught ReferenceError: num3 is not defined at foo
+        //
+        //     var num2 = 200;  // 지역변수
+        //
+        //     function foo2() {
+        //         var num3 = 300;
+        //
+        //         console.log(num1); // 100
+        //         console.log(num2); // 200
+        //         console.log(num3); // 300
+        //     }
+        //
+        //     foo2();
+        // }
+        //
+        // foo();
+
+        // let a = 10;
+        //
+        // function foo() {
+        //     let a = 20;
+        //     console.log(a); // 2. 20
+        //
+        //     foo2();
+        //
+        //     function foo2() {
+        //         let a = 30;
+        //         console.log(a); // 3. 30
+        //     }
+        // }
+        // console.log(a); // 1. 10
+        // foo();
+
+        // JavaScript 에서 호이스팅(hoisting)이란,
+        // 인터프리터가 변수와 함수의 메모리 공간을 선언 전에 미리 할당하는 것을 의미합니다.
+        // var 로 선언한 변수의 경우 호이스팅 시 undefined 로 변수를 초기화합니다.
+        //
+        // foo();  // 실행됨
+        //
+        // function foo() {
+        //     alert("함수가 선언되었습니다.");
+        // }
+
+        // 함수 네이밍 : 해당 기능요소 동작 동사 명사
+
+        // foo();
+        //
+        // var a = 10;
+        //
+        // function foo() { // 함수 선언문
+        //     // var a; 호이스팅
+        //     console.log(a); // 1. undefined
+        //
+        //     var a = 20;
+        //
+        //     foo2();
+        //     function foo2() {
+        //         console.log(a); // 2. undefined
+        //
+        //         var a = 30;
+        //     }
+        // }
+        // console.log(a); // 3. 10
+
+        // foo2();
+        // function foo2() { // 함수 선언식
+        //     if (true) {
+        //         return; // return 바로 아래코드 실행 x 함수 종료
+        //     }
+        //
+        //     console.log("foo2");
+        // }
+        // foo2();
+
+        // 함수 표현식은 호이스팅 x /
+        // foo();   // Uncaught ReferenceError: Cannot access 'foo' before initialization
+        //
+        // const foo = function() { // 함수 표현식
+        //     console.log("함수입니다.");
+        // }
+        // foo();
+
+    </script>
+
+</body>
+</html>

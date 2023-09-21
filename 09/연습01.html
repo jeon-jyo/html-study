@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../common/reset.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        .wrap {
+            width: 600px;
+            border: 5px solid black;
+            display: flex;
+        }
+        .wrap div {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+
+    <section>
+        123456
+    </section>
+
+    <script>
+
+        $(".wrap div").on("click", function () {
+            // wrap div 중 현재 클릭한 대상 this
+            // prev() 이전 , next() 다음 , prevAll() 이전 전체 , nextAll() 다음 전체
+            // $(this).prev().css("background", "red");
+            $(this).css("background", "red");
+            $("section").html("<span>1234</span>");
+        })
+
+    </script>
+
+</body>
+</html>
